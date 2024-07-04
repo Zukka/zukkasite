@@ -7,32 +7,38 @@ import Link from "next/link";
 import Image from "next/image";
 import { Flip, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com";
 
-const EmailSection = () => {
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+interface EmailSectionProps {
+  serviceId: string;
+  templateId: string;
+  userId: string;
+}
+
+const EmailSection: React.FC<EmailSectionProps> = ({
+  serviceId,
+  templateId,
+  userId,
+}) => {
+  const [from_name, setFromName] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = {
-      email,
-      subject,
+
+    const templateParams = {
+      from_name,
       message,
     };
 
-    const JSONData = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSONData,
-    };
     try {
-      const response = await fetch(endpoint, options);
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        userId
+      );
+
       if (response.status === 200) {
         toast.success("Email sent successfully!", {
           autoClose: 3000,
@@ -63,8 +69,7 @@ const EmailSection = () => {
   };
 
   const resetEmailData = () => {
-    setEmail("");
-    setSubject("");
+    setFromName("");
     setMessage("");
   };
 
@@ -111,28 +116,10 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={from_name}
+                onChange={(e) => setFromName(e.target.value)}
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="your_email@mail.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
               />
             </div>
             <div className="mb-6">
