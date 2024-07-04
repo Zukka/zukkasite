@@ -97,7 +97,7 @@ const Privacy = () => {
           </li>
           <li>
             <strong>Analytics:</strong> If you do not wish to share anonymous
-            usage data, you can disable analytics through the app's settings.
+            usage data, you can disable analytics through the app&apos;s settings.
           </li>
         </ul>
         <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
