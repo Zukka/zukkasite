@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { downloadFile } from "../utils/downloadFile";
+import CookieConsent from "react-cookie-consent";
 
 const HeroSection = () => {
   const handleDownload = () => {
@@ -12,6 +13,24 @@ const HeroSection = () => {
 
   return (
     <section className="lg:py-16">
+      <CookieConsent
+        location="bottom"
+        buttonText="I understand"
+        cookieName="cookieConsentSite"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{
+          borderRadius: 24,
+          background: "#ADB7BE",
+          color: "#4e503b",
+          fontSize: "13px",
+          margin: 24,
+          padding: 16,
+        }}
+        expires={150}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
+
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
