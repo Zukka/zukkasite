@@ -3,8 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { downloadFile } from "../utils/downloadFile";
 
 const HeroSection = () => {
+  const handleDownload = () => {
+    downloadFile("/resume.pdf", "resume.pdf");
+  };
+
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12">
@@ -46,7 +51,10 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-500 via-orange-400 to-yellow-200 hover:bg-slate-200 text-white">
               Hire me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-500 via-orange-400 to-yellow-200 hover:bg-slate-800 text-white mt-3">
+            <button
+              onClick={handleDownload}
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-500 via-orange-400 to-yellow-200 hover:bg-slate-800 text-white mt-3"
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
