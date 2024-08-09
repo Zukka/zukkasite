@@ -26,7 +26,8 @@ export const projectsData: Project[] = [
     imgUrl: "/images/projects/imfree.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://apps.apple.com/it/app/im-free/id1300258390?l=en-GB&platform=iphone",
   },
   {
     id: 4,

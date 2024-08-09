@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
           background: `url(${project.imgUrl})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
         }}
       >
