@@ -12,6 +12,9 @@ const Footer = () => {
         <Link className="text-slate-500 pt-2" href="/privacyimfree">
           Privacy I&apos;m Free App
         </Link>
+        <Link className="text-slate-500 pt-2" href="/privacysmartcounter">
+          Privacy Smart Counter App
+        </Link>
         <p className="text-slate-500 pt-2">All right reserved.</p>
       </div>
     </footer>
