@@ -1,21 +1,30 @@
 import Link from "next/link";
 import React from "react";
-
 const Footer = () => {
   return (
-    <footer className=" z-10 footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-      <div className="container p-12 flex justify-between">
-        <img src="../../favicon.ico" alt="logo" className="h-10 w-10 mb-28" />
-        <Link className="text-slate-500 pt-2" href="/privacy">
-          Privacy
-        </Link>
-        <Link className="text-slate-500 pt-2" href="/privacyimfree">
-          Privacy I&apos;m Free App
-        </Link>
-        <Link className="text-slate-500 pt-2" href="/privacysmartcounter">
-          Privacy Smart Counter App
-        </Link>
-        <p className="text-slate-500 pt-2">All right reserved.</p>
+    <footer className="z-10 footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+      <div className="container p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <img src="../../favicon.ico" alt="logo" className="h-10 w-10" />
+
+        <div className="flex flex-col md:flex-row md:gap-6 gap-2 flex-1 md:justify-center">
+          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacy">
+            Privacy
+          </Link>
+          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyimfree">
+            Privacy I&apos;m Free App
+          </Link>
+          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacysmartcounter">
+            Privacy Smart Counter App
+          </Link>
+          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacytouchblock">
+            Privacy Touch Block App
+          </Link>
+          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyrecall">
+            Privacy Recall App
+          </Link>
+        </div>
+
+        <p className="text-slate-500">All rights reserved.</p>
       </div>
     </footer>
   );
