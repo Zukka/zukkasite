@@ -173,7 +173,7 @@ const PrivacyReCall = () => {
           <strong>g) System Services</strong>
           <br />
           • Permissions required: FOREGROUND_SERVICE,
-          FOREGROUND_SERVICE_PHONE_CALL
+          FOREGROUND_SERVICE_DATA_SYNC
           <br />
           • Purpose: Keep the call monitoring service active in the background
           <br />
@@ -296,7 +296,7 @@ const PrivacyReCall = () => {
           <br />
           • <strong>SEND_SMS:</strong> To send automatic SMS messages
           <br />
-          • <strong>FOREGROUND_SERVICE, FOREGROUND_SERVICE_PHONE_CALL:</strong>{" "}
+          • <strong>FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC:</strong>{" "}
           To keep the monitoring service running in the background
           <br />
           • <strong>POST_NOTIFICATIONS:</strong> To display service notifications
