@@ -2,7 +2,6 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Project } from "../models/Project";
-import { basePath } from '../utils/basePath'
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
-          background: `url(${basePath}${project.imgUrl})`,
+          background: `url(${project.imgUrl})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
         }}

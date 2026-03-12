@@ -1,13 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { basePath } from '../utils/basePath'
 
 const Footer = () => {
   return (
     <footer className="z-10 footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <Image src={`${basePath}/favicon.ico`} alt="logo" className="h-10 w-10" />
+        <Image src={`/favicon.ico`} alt="logo" className="h-10 w-10" />
 
         <div className="flex flex-col md:flex-row md:gap-6 gap-2 flex-1 md:justify-center">
           <Link className="text-slate-500 hover:text-white transition-colors" href="/privacy">

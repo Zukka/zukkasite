@@ -5,7 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { downloadFile } from "../utils/downloadFile";
 import CookieConsent from "react-cookie-consent";
-import { basePath } from "../utils/basePath";
 
 const HeroSection = () => {
   const handleDownload = () => {
@@ -90,7 +89,7 @@ const HeroSection = () => {
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src={`${basePath}/images/alessandro_round.png`}
+              src={`/images/alessandro_round.png`}
               alt="Dev image"
               width={300}
               height={300}
