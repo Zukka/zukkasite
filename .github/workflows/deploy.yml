@@ -28,6 +28,10 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+        env:
+          NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+          NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+          NEXT_PUBLIC_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_PUBLIC_KEY }}
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
