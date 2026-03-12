@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
+import { basePath } from "../utils/basePath";
 
 
 interface NavLink {
@@ -42,7 +43,7 @@ const NavBar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <Image src="../../favicon.ico" alt="logo" className="h-14 w-14" />
+          <Image src={`${basePath}/favicon.ico`} alt="logo" className="h-14 w-14" />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
