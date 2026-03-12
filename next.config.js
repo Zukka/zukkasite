@@ -5,6 +5,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   output: "export",
+  assetPrefix: isProd ? '/zukkasite/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/zukkasite' : ''
 };
 
