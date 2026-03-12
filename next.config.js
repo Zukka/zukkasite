@@ -5,6 +5,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   output: "export",
+  basePath: process.env.NODE_ENV === 'production' ? '/zukkasite' : ''
 };
 
 module.exports = nextConfig;

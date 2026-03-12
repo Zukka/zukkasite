@@ -10,18 +10,31 @@ const Footer = () => {
           <Link className="text-slate-500 hover:text-white transition-colors" href="/privacy">
             Privacy
           </Link>
-          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyimfree">
-            Privacy I&apos;m Free App
-          </Link>
-          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacysmartcounter">
-            Privacy Smart Counter App
-          </Link>
-          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacytouchblock">
-            Privacy Touch Block App
-          </Link>
-          <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyrecall">
-            Privacy Recall App
-          </Link>
+
+          <div className="flex flex-col">
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyimfree">
+              Privacy I&apos;m Free App
+            </Link>
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/privacysmartcounter">
+              Privacy Smart Counter App
+            </Link>
+          </div>
+          <div className="flex flex-col">
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/privacytouchblock">
+              Privacy Touch Block App
+            </Link>
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/privacyrecall">
+              Privacy Recall App
+            </Link>
+          </div>
+          <div className="flex flex-col">
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/privacybioflow">
+              Privacy BioFlow App
+            </Link>
+            <Link className="text-slate-500 hover:text-white transition-colors" href="/termsbioflow">
+              Terms BioFlow App
+            </Link>
+          </div>
         </div>
 
         <p className="text-slate-500">All rights reserved.</p>
