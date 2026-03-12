@@ -32,10 +32,6 @@ const EmailSection: React.FC<EmailSectionProps> = ({
     };
 
     try {
-      console.log('serviceId:', serviceId);
-      console.log('templateId:', templateId);
-      console.log('userId:', userId);
-
       const response = await emailjs.send(
         serviceId,
         templateId,
