@@ -3,15 +3,6 @@ import { Project } from "../models/Project";
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "My portfolio website",
-    imgUrl: "/images/projects/web_site.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
     title: "BlockIT",
     description: "Block unwanted calls",
     imgUrl: "/images/projects/blockit.png",
@@ -20,7 +11,7 @@ export const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 3,
+    id: 2,
     title: "I'm Free",
     description: "Support users to stop smoking",
     imgUrl: "/images/projects/imfree.png",
@@ -28,6 +19,15 @@ export const projectsData: Project[] = [
     gitUrl: "/",
     previewUrl:
       "https://apps.apple.com/it/app/im-free/id1300258390?l=en-GB&platform=iphone",
+  },
+    {
+    id: 3,
+    title: "React Portfolio Website",
+    description: "My portfolio website",
+    imgUrl: "/images/projects/web_site.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Zukka/zukkasite",
+    previewUrl: "/",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     description: "Display the list of stargazers in a repository.",
     imgUrl: "/images/projects/stargazer.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Zukka/Stargazers",
     previewUrl: "/",
   },
 ];
