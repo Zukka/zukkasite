@@ -141,9 +141,11 @@ const EmailSection: React.FC<EmailSectionProps> = ({
             </div>
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="px-1 py-1 w-full rounded-full bg-gradient-to-br from-red-500 via-orange-400 to-yellow-200 hover:bg-slate-800 text-white mt-3"
             >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
               Send Message
+              </span>
             </button>
           </form>
         </div>
