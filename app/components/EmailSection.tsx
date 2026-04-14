@@ -85,9 +85,9 @@ const EmailSection: React.FC<EmailSectionProps> = ({
         rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"
         ></div>
         <div>
-          <h5 className="text-xl font-bold text-white my-2">
+          <h4 className="text-xl font-bold text-white my-2">
             Let&#39;s Connect
-          </h5>
+          </h4>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {" "}
             My inbox is always open. Whether you have a question or just want to
