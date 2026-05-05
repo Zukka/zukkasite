@@ -40,7 +40,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex flex-col">
-            <Link className="text-[#ADB7BE] hover:text-white transition-colors" href="/privacygramì">
+            <Link className="text-[#ADB7BE] hover:text-white transition-colors" href="/privacygrami">
               Privacy Gramì App
             </Link>
           </div>
