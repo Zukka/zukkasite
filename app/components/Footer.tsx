@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="z-10 footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <Image src={`/favicon.ico`} alt="logo" 
-            width={32}
-            height={32} />
+        <Image src={`/favicon.ico`} alt="logo"
+          width={32}
+          height={32} />
 
         <div className="flex flex-col md:flex-row md:gap-6 gap-2 flex-1 md:justify-center">
           <Link className="text-[#ADB7BE] hover:text-white transition-colors" href="/privacy">
@@ -37,6 +37,11 @@ const Footer = () => {
             </Link>
             <Link className="text-[#ADB7BE] hover:text-white transition-colors" href="/termsbioflow">
               Terms BioFlow App
+            </Link>
+          </div>
+          <div className="flex flex-col">
+            <Link className="text-[#ADB7BE] hover:text-white transition-colors" href="/privacygramì">
+              Privacy Gramì App
             </Link>
           </div>
         </div>
