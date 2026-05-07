@@ -7,74 +7,87 @@ import Link from "next/link";
 const PrivacyGrami = () => {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mx-auto mt-24 px-12 py-4">
         <div className="flex items-center space-x-2">
           <Link
             href="/"
-            className="w-10 flex items-center text-slate-200 hover:text-white hover:border-white"
+            className="flex w-10 items-center text-slate-200 hover:border-white hover:text-white"
           >
             <ArrowLeftCircleIcon className="h-10 w-10" />
           </Link>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl leading-normal">
+          <p className="text-base leading-normal text-[#ADB7BE] sm:text-lg lg:text-xl">
             Back to home page
           </p>
         </div>
 
-        <h3 className="text-white mb-4 text-2xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold">
+        <h3 className="mb-4 text-2xl font-extrabold text-white sm:text-4xl lg:text-5xl lg:leading-normal">
           Privacy Policy for &quot;Gramì&quot;
         </h3>
-        <h2 className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          <strong>Effective date: </strong>05/05/2025
+        <h2 className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          <strong>Effective date: </strong>07/05/2026
         </h2>
 
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Thank you for using &quot;Gramì&quot;. Your privacy is important to
-          us. This Privacy Policy explains how we collect, use, disclose, and
-          safeguard your information when you use our mobile application,
-          available on iOS and Android.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Thank you for using &quot;Gramì&quot;. This Privacy Policy explains how
+          information is handled when you use our mobile application on iOS and
+          Android.
         </p>
 
-        {/* Section 1 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
+          Overview
+        </h6>
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Gramì does not require an account. We do not ask you to create a
+          profile, and we do not collect personal information such as your
+          name, email address, phone number, or precise location in order to use
+          the core features of the app.
+        </p>
+
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
           Data Stored on Your Device
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Gramì stores your saved products and recipes exclusively on your
-          device using a local database. This data never leaves your device and
-          is not transmitted to any server controlled by us. We have no access
-          to it whatsoever.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Gramì stores saved products and recipes locally on your device using a
+          local database. This information is not transmitted to any server
+          controlled by us, and we do not have direct access to this locally
+          stored content.
         </p>
 
-        {/* Section 2 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
-          Personal Information We Do Not Collect
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
+          Data Retention and Deletion
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          We do not collect any personal information such as your name, email
-          address, phone number, or location data. No account is required to use
-          Gramì.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Saved products and recipes remain stored locally on your device until
+          you delete them within the app or uninstall the app from your device.
+          You can delete saved items at any time using the delete options
+          available in the app.
+        </p>
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Because Gramì does not use user accounts, there is no account deletion
+          process. If you want all locally stored app data removed, you can
+          delete saved items individually in the app or uninstall the app from
+          your device. If you need assistance, you can contact us at the email
+          address listed below.
         </p>
 
-        {/* Section 3 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
-          Third-Party Services
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
+          Information Collected by Third-Party Services
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Gramì integrates the following third-party services, which may collect
-          certain non-personal or device-level data automatically. We encourage
-          you to review their respective privacy policies.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Gramì uses third-party services that may automatically collect certain
+          technical or device-level information for analytics, app stability,
+          and advertising. We encourage you to review their privacy policies.
         </p>
 
-        {/* Firebase Crashlytics */}
-        <h6 className="text-white mb-2 text-lg sm:text-xl lg:text-2xl lg:leading-normal font-bold">
+        <h6 className="mb-2 text-lg font-bold text-white sm:text-xl lg:text-2xl lg:leading-normal">
           Firebase Crashlytics (Google LLC)
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          We use Firebase Crashlytics to automatically collect crash reports and
-          diagnostic information when the app encounters an error. This helps us
-          identify and fix stability issues. The data collected includes device
-          model, operating system version, app version, and stack traces. No
-          personally identifiable information is included in crash reports.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          We use Firebase Crashlytics to collect crash reports and diagnostic
+          information when the app encounters an error. This helps us identify
+          and fix stability issues. The information collected may include device
+          model, operating system version, app version, and technical crash
+          data such as stack traces.
           <br />
           <br />
           Privacy policy:{" "}
@@ -88,17 +101,14 @@ const PrivacyGrami = () => {
           </a>
         </p>
 
-        {/* Firebase Analytics */}
-        <h6 className="text-white mb-2 text-lg sm:text-xl lg:text-2xl lg:leading-normal font-bold">
+        <h6 className="mb-2 text-lg font-bold text-white sm:text-xl lg:text-2xl lg:leading-normal">
           Firebase Analytics (Google LLC)
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          We use Firebase Analytics to understand how users interact with the
-          app in aggregate — such as which features are used most frequently and
-          general usage patterns. Data collected may include device type,
-          operating system, app version, and anonymised usage events. This data
-          is used solely to improve the app experience and is not used to
-          identify individual users.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          We use Firebase Analytics to understand how the app is used in
+          aggregate, for example which features are used most often and general
+          usage patterns. The information collected may include device type,
+          operating system, app version, and usage events.
           <br />
           <br />
           Privacy policy:{" "}
@@ -112,19 +122,19 @@ const PrivacyGrami = () => {
           </a>
         </p>
 
-        {/* AdMob */}
-        <h6 className="text-white mb-2 text-lg sm:text-xl lg:text-2xl lg:leading-normal font-bold">
+        <h6 className="mb-2 text-lg font-bold text-white sm:text-xl lg:text-2xl lg:leading-normal">
           Google AdMob (Google LLC)
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
           Gramì displays banner advertisements provided by Google AdMob. AdMob
-          may collect and use data to serve personalised or non-personalised
-          ads, depending on your device settings and applicable privacy
-          regulations (including GDPR and ATT on iOS). Data collected by AdMob
-          may include your device&apos;s advertising identifier, IP address,
-          and interaction data with ads. You can opt out of personalised
-          advertising through your device settings (iOS: Settings → Privacy →
-          Tracking; Android: Settings → Google → Ads).
+          may collect and use data to serve personalized or non-personalized ads,
+          depending on your device settings and applicable law. This may include
+          identifiers, IP address, and ad interaction data.
+          <br />
+          <br />
+          You can manage advertising preferences through your device settings.
+          On iOS, this may include privacy and tracking settings. On Android,
+          this may include Google ad settings on your device.
           <br />
           <br />
           Privacy policy:{" "}
@@ -138,47 +148,59 @@ const PrivacyGrami = () => {
           </a>
         </p>
 
-        {/* Section 4 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
+          How Third-Party Data Is Deleted
+        </h6>
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Some technical and advertising-related data may be processed by our
+          third-party service providers as described above. Retention and
+          deletion of that data are governed by the privacy policies and data
+          retention practices of those providers. Please refer to their privacy
+          documentation for more information about how they retain and delete
+          data.
+        </p>
+
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
           Children&apos;s Privacy
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Gramì is not directed at children under the age of 13. We do not
-          knowingly collect personal information from children. If you are a
-          parent or guardian and believe your child has provided personal
-          information through the app, please contact us and we will take
-          appropriate action.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          Gramì is not directed to children under the age of 13. We do not
+          knowingly collect personal information from children. If you believe a
+          child has provided personal information through the app, please
+          contact us and we will review the request.
         </p>
 
-        {/* Section 5 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
           Third-Party Links
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          The app may contain links to third-party websites or services. We have
-          no control over their content or privacy practices and encourage you
-          to review their privacy policies before providing any information.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          The app may contain links to third-party websites or services. We are
+          not responsible for the content, policies, or practices of third-party
+          websites or services.
         </p>
 
-        {/* Section 6 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
           Changes to This Privacy Policy
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          We may update this Privacy Policy from time to time. Any changes will
-          be posted on this page with an updated effective date. We encourage
-          you to review this page periodically.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          We may update this Privacy Policy from time to time. When we do, we
+          will update the effective date shown on this page. We encourage you to
+          review this page periodically.
         </p>
 
-        {/* Section 7 */}
-        <h6 className="text-white mb-4 text-xl sm:text-2xl lg:text-3xl lg:leading-normal font-extrabold">
+        <h6 className="mb-4 text-xl font-extrabold text-white sm:text-2xl lg:text-3xl lg:leading-normal">
           Contact Us
         </h6>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          If you have any questions or concerns about this Privacy Policy,
-          please contact us at zukka75@gmail.com or use the contact form on the
-          home page. By using Gramì, you agree to the terms described in this
-          Privacy Policy.
+        <p className="mb-6 text-base text-[#ADB7BE] sm:text-lg lg:text-xl">
+          If you have any questions about this Privacy Policy or need help with
+          deletion of locally stored app data, please contact us at{" "}
+          <a
+            href="mailto:zukka75@gmail.com"
+            className="underline hover:text-white"
+          >
+            zukka75@gmail.com
+          </a>
+          .
         </p>
       </div>
     </main>
